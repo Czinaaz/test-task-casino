@@ -11,6 +11,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 header {
@@ -178,6 +180,10 @@ button:hover {
     header p {
         font-size: 20px;
     }
+    #background-circle {
+        width: 400px;
+        height: 400px;
+    }
 
     #bonus-wheel {
         width: 300px;
@@ -187,6 +193,74 @@ button:hover {
     button {
         width: 90%;
         font-size: 18px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 25% auto;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .modal-message {
+        font-size: 1rem;
+        padding: 15px;
+    }
+
+    .modal-message p.main {
+        font-size: 1.2rem;
+    }
+
+    #modal-spin-button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+@media (max-width: 420px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+    #background-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    #bonus-wheel {
+        width: 200px;
+        height: 200px;
+    }
+
+    button {
+        width: 80%;
+        font-size: 14px;
+    }
+
+
+
+    .modal-content {
+        margin: 35% auto;
+        padding: 15px;
+        font-size: 0.95rem;
+        border-width: 5px;
+    }
+
+    .modal-message {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+
+    .modal-message p.main {
+        font-size: 1rem;
+    }
+
+    #modal-spin-button {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
     }
 }
 
@@ -201,10 +275,10 @@ button:hover {
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
     overflow: auto;
     background-color: rgba(0,0,0,0.7);
-
+    overflow: hidden;
     
 }
 
@@ -242,13 +316,19 @@ button:hover {
 }
 
 .modal-message p.green {
-    color: #00FF00;
+    color: #00FF00; 
     font-weight: bold;
+    font-size: 1.6rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.5px;
 }
 
 .modal-message p.gold {
-    color: #FFD700;
+    color: gold;
     font-weight: bold;
+    font-size: 1.6rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    letter-spacing: 0.5px;
 }
 
 .modal-message p.italic {

@@ -54,8 +54,8 @@ function revealMessage(count) {
 
     if (count === 1) {
         html = `
-            <div <div class="modal-message">
-                <p style="color: #00FF00; font-size: 1.5rem;">You have won 1 free chance to win €1,000,000.00</p>
+            <div class="modal-message">
+                <p class="green">You have won 1 free chance to win €1,000,000.00</p>
                 <p style="color: #666; font-style: italic;">Spin the wheel again for more chances to win.</p>
                 <button id="modal-spin-button" aria-label="Spin the Wheel">SPIN AGAIN</button>
             </div>
@@ -63,8 +63,8 @@ function revealMessage(count) {
         chances = 1;
     } else if (count === 2) {
         html = `
-            <div <div class="modal-message">
-                <p style="color: #FFD700; font-size: 1.5rem;">You have unlocked a 50X multiplier</p>
+            <div class="modal-message">
+                <p class="gold">You have unlocked a 50X multiplier</p>
                 <p>50 free chances to win €1,000,000.00</p>
                 <p style="color: #666; font-style: italic;">Keep spinning to keep winning.</p>
                 <button id="modal-spin-button" aria-label="Spin the Wheel">SPIN AGAIN</button>
@@ -73,8 +73,8 @@ function revealMessage(count) {
         chances *= 50;
     } else if (count === 3) {
         html = `
-            <div <div class="modal-message">
-                <p style="color: #00FF00; font-size: 1.5rem;">Your chances are doubled</p>
+            <div class="modal-message">
+                <p class="green">Your chances are doubled</p>
                 <p>100 free chances to win €1,000,000.00</p>
                 <button id="modal-spin-button" aria-label="Play Now">PLAY NOW</button>
             </div>
